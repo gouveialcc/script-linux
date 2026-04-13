@@ -1,6 +1,7 @@
-###  setup_clamav.sh  ###
+__________________________
+SETUP_CLAMAV.SH
+__________________________
 
-ClamAV via Docker
 Este script automatiza a implantação de uma solução de segurança com ClamAV rodando em container, garantindo isolamento e facilidade de manutenção. As etapas realizadas são:
 
 1. Preparação do Ambiente
@@ -24,3 +25,33 @@ Gera logs datados e implementa uma política de retenção (limpeza de logs com 
 
 4. Agendamento (Cron)
 Automação Semanal: Configura automaticamente uma tarefa no crontab do host para disparar o scan todos os domingos às 05:00, executando o comando via docker exec.
+
+
+__________________________
+DISK.SH 
+__________________________
+
+O que o script faz?
+Varredura Inteligente: Ele percorre o diretório escolhido e calcula o tamanho total de cada subpasta.
+
+Rank de "Vilões": Organiza os resultados do maior para o menor, exibindo apenas os 20 maiores.
+
+Alerta Visual: Usa cores para facilitar a leitura. Se o tamanho estiver em Gigabytes (G), ele destaca em vermelho; se for menor, em verde.
+
+Estética Profissional: Exibe uma barra de progresso animada e uma tabela organizada para que os nomes dos arquivos não fiquem bagunçados na tela.
+
+🚀 Como usar?
+Existem duas formas principais de rodar o script:
+
+1. Analisar a pasta onde você está agora:
+Basta executar o script sem argumentos:
+# disk.sh
+
+2. Analisar uma pasta específica (ex: sua pasta de Usuário ou o Sistema todo):
+Passe o caminho da pasta logo após o nome do script:
+
+- Para analisar sua pasta pessoal
+# disk.sh /home/seu_usuario
+
+- Para analisar o sistema inteiro (pode pedir senha de administrador)
+#  disk.sh /
