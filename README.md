@@ -45,13 +45,13 @@ Existem duas formas principais de rodar o script:
 
 1. Analisar a pasta onde você está agora:
 Basta executar o script sem argumentos:
-$ disk.sh
+> disk.sh
 
 2. Analisar uma pasta específica (ex: sua pasta de Usuário ou o Sistema todo):
 Passe o caminho da pasta logo após o nome do script:
 
 - Para analisar sua pasta pessoal
-$ disk.sh /home/seu_usuario
+> disk.sh /home/seu_usuario
 
 - Para analisar o sistema inteiro (pode pedir senha de administrador)
-$ disk.sh /
+> disk.sh /
